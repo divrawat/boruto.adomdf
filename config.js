@@ -1,6 +1,6 @@
 
-export const DOMAIN = 'http://localhost:3000';
-// export const DOMAIN = 'https://www.vinlandsagamanga.in.net';
+// export const DOMAIN = 'http://localhost:3000';
+export const DOMAIN = 'https://www.borutomanga.in.net';
 
 export const MANGA_DESCRIPTION = `<a href="${DOMAIN}"><u>Boruto: Naruto Next Generations</u></a> is an anime series that follows the adventures of Boruto Uzumaki, the son of Naruto Uzumaki, the Seventh Hokage of the Hidden Leaf Village. The story explores Boruto's struggles to step out of his father's shadow while forging his own ninja path. Alongside his friends Sarada Uchiha and Mitsuki, Boruto faces various challenges, including mysterious threats to their village and the ninja world.`
 
