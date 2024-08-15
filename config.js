@@ -533,4 +533,4 @@ export const chaptersData = [
         "chapterNumber": "90",
         "numImages": 41
     },
-];
+]
