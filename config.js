@@ -1,6 +1,6 @@
 
 // export const DOMAIN = 'http://localhost:3000';
-export const DOMAIN = 'https://www.borutomanga.in.net';
+export const DOMAIN = 'https://ww1.borutomanga.in.net';
 
 export const MANGA_DESCRIPTION = `<a href="${DOMAIN}"><u>Boruto: Naruto Next Generations</u></a> is an anime series that follows the adventures of Boruto Uzumaki, the son of Naruto Uzumaki, the Seventh Hokage of the Hidden Leaf Village. The story explores Boruto's struggles to step out of his father's shadow while forging his own ninja path. Alongside his friends Sarada Uchiha and Mitsuki, Boruto faces various challenges, including mysterious threats to their village and the ninja world.`
 
@@ -70,9 +70,9 @@ export const MANGA_SUMMARY = [
 
 export const navLinks = [
     // { text: 'Vinland Saga Manga Chapters', href: `https://www.vinlandsagamanga.in.net` },
-    { text: 'Home', href: `${DOMAIN}` },
-    { text: 'DMCA', href: `${DOMAIN}/dmca` },
-    { text: 'Terms & Conditions', href: `${DOMAIN}/terms-and-conditions` },
+    { text: 'Chapter 1', href: `${DOMAIN}/manga/boruto-chapter-1` },
+    { text: 'Chapter 10', href: `${DOMAIN}/manga/boruto-chapter-10` },
+    { text: 'Chapter 75', href: `${DOMAIN}/manga/boruto-chapter-75` },
 ];
 
 export const FooterLinks = [
