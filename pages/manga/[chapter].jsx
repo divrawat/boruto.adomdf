@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
-import { APP_NAME, DOMAIN, MANGA_NAME, NEXT_PREVIOUS_PREFIX, IMAGE_PREFIX, CHAPTER_PREFIX, AUTHOR_PAGE, LOGO_URL, chaptersData } from '@/config';
+import { APP_NAME, DOMAIN, MANGA_NAME, NEXT_PREVIOUS_PREFIX, IMAGE_PREFIX, CHAPTER_PREFIX, AUTHOR_PAGE, LOGO_URL, chaptersData, IMAGES_SUBDOMAIN } from '@/config';
 import DisqusComments from '@/components/DisQus';
 export const runtime = 'experimental-edge';
 
@@ -159,7 +159,7 @@ export async function getStaticProps({ params }) {
 
 const getImageUrls = (chapterNumber, numImages) => {
     const imageUrls = [];
-    const chapterImagesFolder = `${DOMAIN}/${IMAGE_PREFIX}/chapter-${chapterNumber}`;
+    const chapterImagesFolder = `${IMAGES_SUBDOMAIN}/chapter-${chapterNumber}`;
     for (let i = 1; i <= numImages; i++) {
         const imageUrl = `${chapterImagesFolder}/${i}.webp`;
         imageUrls.push(imageUrl);
