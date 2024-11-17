@@ -2,6 +2,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { DOMAIN, MANGA_NAME, MANGA_DESCRIPTION, MANGA_AUTHOR, MANGA_RELEASE, MANGA_STATUS, MANGA_ARTIST, MANGA_STUDIO, MANGA_GENRE, APP_DESCRIPTION, APP_NAME, MANGA_SUMMARY, COVER_IMG, AUTHOR_PAGE, LOGO_URL, URL_PREFIX, chaptersData, BEHIND_COVER_IMG, RelatedMangaLinks } from "@/config";
+import dynamic from 'next/dynamic';
+const AdSense = dynamic(() => import('@/components/Adsense'), { ssr: false });
 import Head from "next/head";
 
 export default function Home() {
@@ -81,13 +83,15 @@ export default function Home() {
     </Head >
   );
 
-  const filteredMangaLinks = RelatedMangaLinks.filter(item => item.link !== DOMAIN);
+
 
   return (
     <>
       {head()}
       <Navbar />
       <article>
+
+        <AdSense />
 
         <div className="md:flex md:mb-[60px] mb-5 pt-3 relative bg-[black]">
           <div className="absolute inset-0 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${BEHIND_COVER_IMG})`, opacity: '0.20' }}></div>
@@ -148,56 +152,28 @@ export default function Home() {
 
 
         <h2 id="readmanga" className="font-extrabold text-3xl my-10 px-4 text-center">
-          <Link href={DOMAIN} className="hover:underline">{`Read ${MANGA_NAME} Manga Online`}</Link>
+          <Link href={DOMAIN} className="hover:underline text-white">{`${MANGA_NAME} Manga Chapters`}</Link>
         </h2>
 
-        <div className="mt-10 max-w-[1100px] mb-10 mx-auto px-5 flex flex-wrap justify-center">
-
-          {chapters.map((chapter) => (
-            <div className="flex hover:scale-105 active:scale-95 transition-transform" key={chapter.number}>
-              <a href={chapter.url} className="p-5 hover:underline">
-                <p className="w-[300px] text-center p-5 border border-l-8 border-[black] font-bold break-words">
-                  {`${MANGA_NAME}, Chapter ${chapter.number}`}
-                </p>
-              </a>
-            </div>
-          ))}
-
-        </div>
+        <AdSense />
 
 
+        <div className='mx-6'>
+          <div className=" mt-10 py-3 bg-black border border-[#323232] rounded max-w-[900px] mb-10 mx-auto px-3 flex flex-wrap justify-center max-h-[400px] overflow-y-scroll sm:gap-5 gap-3">
 
-        {/* <div className="max-w-[1100px] mx-auto p-4">
-          <h1 className="text-3xl font-bold mb-6 text-center">Read More Mangas</h1>
-          <div className="flex flex-wrap gap-6 justify-center">
-            {filteredMangaLinks.map((item, index) => (
-              <div key={index} className="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden w-80">
-                <a href={item.link} className="hover:underline">
-                  <img src={item.imageUrl} alt={item.title} className="w-full h-48 object-cover" />
-                  <div className="p-4">
-                    <h2 className="font-bold mb-2 text-center">{item.title}</h2>
-                  </div>
+            {chapters?.map((chapter, index) => (
+              <div className="flex hover:scale-105 active:scale-95 transition-transform my-1" key={index}>
+                <a
+                  // onClick={handleRedirect}
+                  href={chapter.url} className="sm:p-5 p-1.5 text-center  hover:underline text-white bg-black hover:bg-[#2c2b2b] border border-[#292828] rounded sm:w-[160px] w-[110px]">
+                  <p className="sm:text-[14px] text-[12px] tracking-wider font-semibold">{`Chapter  ${chapter?.number}`}</p>
                 </a>
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <AdSense />
 
         <div className="bg-[black] relative">
           <div className="absolute inset-0 bg-black opacity-80"></div> {/* Dark overlay */}

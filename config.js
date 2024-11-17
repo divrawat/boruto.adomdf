@@ -1,6 +1,6 @@
 
 // export const DOMAIN = 'http://localhost:3000';
-export const DOMAIN = 'https://ww1.borutomanga.in.net';
+export const DOMAIN = 'https://boruto.adoptedbyamurderousdukefamily.in.net';
 
 export const IMAGES_SUBDOMAIN = 'https://images.mangachimp.com/boruto';
 
@@ -31,7 +31,7 @@ export const logo = <img src={`${LOGO_URL}`} alt="Logo" className="h-[75px] w-[1
 export const APP_NAME = 'Boruto';
 export const NavbarName = "Boruto";
 
-export const APP_DESCRIPTION = `Read ${MANGA_NAME} manga online at ${DOMAIN}. Boruto Uzumaki, the son of Naruto Uzumaki, the Seventh Hokage of the Hidden Leaf Village. The story explores Boruto's struggles to step out of his father's shadow while forging his own ninja path. Alongside his friends Sarada Uchiha and Mitsuki, Boruto faces various challenges, including mysterious threats to their village and the ninja world.`;
+export const APP_DESCRIPTION = `Read ${MANGA_NAME} manga online. Boruto Uzumaki, the son of Naruto Uzumaki, the Seventh Hokage of the Hidden Leaf Village. The story explores Boruto's struggles to step out of his father's shadow while forging his own ninja path. Alongside his friends Sarada Uchiha and Mitsuki, Boruto faces various challenges, including mysterious threats to their village and the ninja world.`;
 
 export const DISQUS_SHORTNAME = "my-cms-7";
 
@@ -84,91 +84,6 @@ export const FooterLinks = [
     { text: 'Privacy Policy', href: `${DOMAIN}/privacy-policy` },
     { text: 'Terms & Conditions', href: `${DOMAIN}/terms-and-conditions` }
 ];
-
-
-export const RelatedMangaLinks = [
-    {
-        imageUrl: `${DOMAIN}/related/frieran.webp`,
-        title: 'Frieran Manga',
-        link: 'https://www.frierenmanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/one-punch-man.webp`,
-        title: 'One Punch Man Manga',
-        link: 'https://www.onepunchmanmanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/jujutsu-kaisen.webp`,
-        title: 'Jujutsu Kaisen Manga',
-        link: 'https://www.jujutsukaisenmanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/chainsaw-man.webp`,
-        title: 'Chainsaw Man Manga',
-        link: 'https://www.chainsawmanmanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/mushoku-tensei.webp`,
-        title: 'Mushoku Tensei Manga',
-        link: 'https://www.mushokutenseimanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/one-piece.webp`,
-        title: 'One Piece Manga',
-        link: 'https://www.onepiecemanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/jinx.webp`,
-        title: 'Jinx Manga',
-        link: 'https://www.jinxmanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/boruto.webp`,
-        title: 'Boruto Manga',
-        link: 'https://www.borutomanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/demon-slayer.webp`,
-        title: 'Demon Slayer Manga',
-        link: 'https://www.demonslayermanga.in.net',
-    },
-
-    /*
-    {
-        imageUrl: `${DOMAIN}/related/my-dress-up-darling.webp`,
-        title: 'My Dress Up Darling Manga',
-        link: 'https://www.mydressupdarlingmanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/blue-lock.webp`,
-        title: 'Blue Lock Manga',
-        link: 'https://www.bluelockmanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/solo-leveling.webp`,
-        title: 'Solo Leveling Manga',
-        link: 'https://www.sololevelingimanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/my-hero-academia.webp`,
-        title: 'My Hero Academia Manga',
-        link: 'https://www.myheroacademiamanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/vinland-saga.webp`,
-        title: 'Vinland Saga Manga',
-        link: 'https://www.vinlandsagamanga.in.net',
-    },
-    {
-        imageUrl: `${DOMAIN}/related/black-clover.webp`,
-        title: 'Black Clover Manga',
-        link: 'https://www.blackclovermanga.in.net',
-    },
-*/
-
-];
-
-
 
 export const chaptersData = [
     {
