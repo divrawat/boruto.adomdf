@@ -451,3 +451,28 @@ export const chaptersData = [
         "numImages": 41
     },
 ]
+
+
+
+export const last5chapters = [
+    {
+        "chapterNumber": "85",
+        "numImages": 41
+    },
+    {
+        "chapterNumber": "86",
+        "numImages": 42
+    },
+    {
+        "chapterNumber": "87",
+        "numImages": 41
+    },
+    {
+        "chapterNumber": "88",
+        "numImages": 41
+    },
+    {
+        "chapterNumber": "89",
+        "numImages": 41
+    },
+]

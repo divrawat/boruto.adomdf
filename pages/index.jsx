@@ -23,7 +23,7 @@ export default function Home() {
 
   const chapters = sortedChapters.map((chapter) => ({
     number: chapter.chapterNumber,
-    url: `${DOMAIN}/${URL_PREFIX}-${chapter.chapterNumber}`
+    url: `${DOMAIN}/chapter-${chapter.chapterNumber}`
   }));
 
 

@@ -36,7 +36,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
     const nextChapter = chapterIndex < totalChapters - 1 ? chaptersData[chapterIndex + 1].chapterNumber : null;
 
 
-    const DESCRIPTION = `${MANGA_NAME} chapter ${chapterNumber} online HD Quality. Boruto Uzumaki, the son of Naruto Uzumaki, the Seventh Hokage of the Hidden Leaf Village. The story explores Boruto's struggles to step out of his father's shadow while forging his own ninja path. Alongside his friends Sarada Uchiha and Mitsuki, Boruto faces various challenges, including mysterious threats to their village and the ninja world.`;
+    const DESCRIPTION = `Read ${MANGA_NAME} chapter ${chapterNumber} online. Boruto Uzumaki, the son of Naruto Uzumaki, the Seventh Hokage of the Hidden Leaf Village. The story explores Boruto's struggles to step out of his father's shadow while forging his own ninja path. Alongside his friends Sarada Uchiha and Mitsuki, Boruto faces various challenges, including mysterious threats to their village and the ninja world.`;
     const URL = params.chapter;
 
 
