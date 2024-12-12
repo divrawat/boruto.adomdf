@@ -91,7 +91,7 @@ export default function Home() {
       <Navbar />
       <article>
 
-        <AdSense />
+        {/* <AdSense /> */}
 
         <div className="md:flex md:mb-[60px] mb-5 pt-3 relative bg-[black]">
           <div className="absolute inset-0 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${BEHIND_COVER_IMG})`, opacity: '0.20' }}></div>
@@ -155,7 +155,7 @@ export default function Home() {
           <Link href={DOMAIN} className="hover:underline text-white">{`${MANGA_NAME} Manga Chapters`}</Link>
         </h2>
 
-        <AdSense />
+        {/* <AdSense /> */}
 
 
         <div className='mx-6'>
@@ -164,7 +164,7 @@ export default function Home() {
             {chapters?.map((chapter, index) => (
               <div className="flex hover:scale-105 active:scale-95 transition-transform my-1" key={index}>
                 <a
-                  // onClick={handleRedirect}
+                  onClick={handleRedirect}
                   href={chapter.url} className="sm:p-5 p-1.5 text-center  hover:underline text-white bg-black hover:bg-[#2c2b2b] border border-[#292828] rounded sm:w-[160px] w-[110px]">
                   <p className="sm:text-[14px] text-[12px] tracking-wider font-semibold">{`Chapter  ${chapter?.number}`}</p>
                 </a>
@@ -173,7 +173,7 @@ export default function Home() {
           </div>
         </div>
 
-        <AdSense />
+        {/* <AdSense /> */}
 
         <div className="bg-[black] relative">
           <div className="absolute inset-0 bg-black opacity-80"></div> {/* Dark overlay */}
